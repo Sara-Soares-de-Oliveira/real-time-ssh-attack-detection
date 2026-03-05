@@ -14,7 +14,7 @@ def tail_lines(file_path: str):
             if line: 
                 yield line
             else: 
-                time.sleep(0.5)
+                time.sleep(0.3)
  except(FileNotFoundError, PermissionError, OSError) as e:
      print(f"Error: {e}")
         
